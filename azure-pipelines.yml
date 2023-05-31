@@ -7,7 +7,7 @@ trigger:
 - main
 
 pool:
-  name: az400h
+  name: az400
 
 
 variables:
