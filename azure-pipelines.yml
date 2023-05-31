@@ -7,7 +7,11 @@ trigger:
 - main
 
 pool:
-  vmImage: 'az400'
+  name: az400h
+  demands:
+  - msbuild
+  - visualstudio
+  - vstest
 
 variables:
   solution: '**/*.sln'
