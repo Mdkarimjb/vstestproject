@@ -1,10 +1,10 @@
 pipeline {
   agent any
   stages {
-    stage('build') {
+    stage('') {
+      agent any
       steps {
-        build(job: 'test', propagate: true, quietPeriod: 2, wait: true, waitForStart: true)
-        echo 'successfully build'
+        sh 'echo "hello pipeline"'
       }
     }
 
